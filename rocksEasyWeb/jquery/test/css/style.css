@@ -116,3 +116,15 @@ button {
 .clearfix:after {
   clear: both;
 }
+
+/* add */
+div .menu {
+  padding: 10px 0 10px;
+  display: none;
+}
+div .box {
+  background-color: #98bf21;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
