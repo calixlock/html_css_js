@@ -1,10 +1,13 @@
 ### 참고
 
-- 웹퍼블리싱 관련
+- 웹퍼블리싱 도서
   - https://product.kyobobook.co.kr/detail/S000061671245
-- https://www.youtube.com/@Ezweb/playlists
+- 영상
+  - https://www.youtube.com/@Ezweb/playlists
 
 ---
+
+> progress
 
 ### html
 
@@ -28,4 +31,4 @@
 
 - #### log
   > - 시작 : 2024
-  > - 진행 : 1/147
+  > - 진행 : 4/147
