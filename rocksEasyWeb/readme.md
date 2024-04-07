@@ -4,6 +4,8 @@
   - https://product.kyobobook.co.kr/detail/S000061671245
 - 영상
   - https://www.youtube.com/@Ezweb/playlists
+- shortCut emmet
+  - https://docs.emmet.io/cheat-sheet/
 
 ---
 
