@@ -27,14 +27,14 @@ $(() => {
       // 이벤트가 일어난 범위 : this
       $(this).css({
         // backgroundColor: "black",
-        color: "white",
+        color: "black",
       });
     })
     //chain Method & shortCut(on 생략)
     .mouseout(function () {
       $(this).css({
         // backgroundColor: "black",
-        color: "black",
+        color: "red",
       });
     });
 });
