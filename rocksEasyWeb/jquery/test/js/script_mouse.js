@@ -20,6 +20,7 @@
 
 $(() => {
   // mouse 작동
+  //eventType : keydown, keyup,focus,blur,change,resize,scroll
   // 다중선택
   $("#typo,h1")
     .on("mouseover", function () {
@@ -30,7 +31,7 @@ $(() => {
       });
     })
     //chain Method & shortCut(on 생략)
-    .mouseout(() => {
+    .mouseout(function () {
       $(this).css({
         // backgroundColor: "black",
         color: "black",
