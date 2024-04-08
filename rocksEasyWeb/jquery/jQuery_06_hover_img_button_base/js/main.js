@@ -1,7 +1,7 @@
 $(() => {
   let $duration = 300,
     $button = $("#buttons2 button");
-
+  // for 대신 each 사용
   $button.each(function (idx) {
     let newTop = 40 * (idx - 1) + "px";
     $(this)
