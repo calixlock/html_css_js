@@ -56,6 +56,10 @@ button {
   top: 0;
   left: -350px;
   position: fixed;
+  transition: 0.3s cubic-bezier(0.06, 1.95, 0.69, 0.6);
+}
+.page-main > aside.open {
+  left: -70px;
 }
 
 .page-main > aside ul {
