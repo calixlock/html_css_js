@@ -4,19 +4,21 @@
  * Slideshow
  */
 .slideshow {
-    overflow: hidden;
-    position: relative;
-    min-width: 960px;
-    height: 465px;
+  overflow: hidden;
+  position: relative;
+  /* 최소너비가 960이하로 줄지 않는다  */
+  min-width: 960px;
+  height: 465px;
 }
 .slideshow img {
-    display: none;
-    position: absolute;
-    left: 50%;
-    margin-left: -800px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
 }
 
+/* modernizr > 브라우저의 html css js의 지원 여부를 알려줌 */
 /* JavsScript  */
 .no-js .slideshow img:first-child {
-    display: inline;
+  display: inline;
 }
