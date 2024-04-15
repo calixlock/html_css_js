@@ -27,7 +27,8 @@
     ```html
     <tag> contents </tag>
     ```
-  - symantice 시멘틱 태그
+  - symantic 시멘틱 태그
+    - html5에서는 role을 부여할 필요 없어짐
 
 ---
 
