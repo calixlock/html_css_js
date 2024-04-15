@@ -37,6 +37,9 @@
 
 - https://www.w3schools.com/html/html_blocks.asp
 
+- div - role
+  - https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute
+
 ## 더미텍스트
 
 - lorem

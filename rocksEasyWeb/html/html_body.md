@@ -18,4 +18,20 @@
 
 ---
 
-###
+### body의 sectioning
+
+- 과거
+  - w3c role attribute에 맞게
+- 현재
+  - html 내용 전달
+    ```html
+    <tag> contents </tag>
+    ```
+  - symantice 시멘틱 태그
+
+---
+
+### 참고사이트
+
+- div - role
+  - https://www.w3.org/WAI/PF/HTML/wiki/RoleAttribute
