@@ -26,8 +26,10 @@
     - input
     - label
     - b
-    - em
-    - strong
+    - em(emphasize 기울임 강조 / 검색 시 수집됨 )
+    - strong(강조 더강조 / 검색 시 수집됨)
+    - abbr (약어 abbreviation)
+    - dfn (전문용어 부연 설명)
 
 ---
 
