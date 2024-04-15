@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <!-- css 임시 적용 -->
+  <style>
+    /* css 문법 영역 */
+    .col1 {
+      width: 50px;
+    }
+
+    .col2 {
+      width: 200px;
+    }
+
+    .col3 {
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>table</h1>
+  <p>일정표, 달력, 게시판, 이력서 양식</p>
+
+  <!-- figure/figcaption을 통해 table의 summery/설명 작성 -->
+  <figure>
+    <figcaption>
+
+      <h2>일정표</h2>
+      <p>1/4분기 일정표</p>
+      <!--비표준 : table에 css/border속성 넣기  -->
+      <table border="1">
+        <!-- 비표준 : css/width(너비)를 지정  -->
+        <colgroup>
+          <!-- <col width="300"> -->
+          <col class="col1" />
+          <col class="col2" />
+          <col class="col3" />
+          <col class="col3" />
+        </colgroup>
+        <thead>
+          <!--tr : table row = 행-->
+          <tr>
+            <!-- td : table data = 열 데이터 / 한 셀 -->
+            <th>구분</th>
+            <!-- scope를 넣어 colume 제목 범위 지정 -->
+            <th scope="col">제목_1</th>
+            <th scope="col">제목_2</th>
+            <th scope="col">제목_3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>data_11</td>
+            <td>data_12</td>
+            <td>data_13</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>data_21</td>
+            <td>data_22</td>
+            <td>data_23</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>data_31</td>
+            <td>data_32</td>
+            <td>data_33</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">total</th>
+            <td>total_1</td>
+            <td>total_2</td>
+            <td>total_3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </figcaption>
+  </figure>
+  <hr>
+  <figure>
+    <figcaption>
+
+      <h2>데이터 병합</h2>
+      <table border="1">
+        <!-- 비표준 : css/width(너비)를 지정  -->
+
+        <thead>
+          <!--tr : table row = 행-->
+          <tr>
+            <!-- td : table data = 열 데이터 / 한 셀 -->
+            <th>구분</th>
+            <!-- scope를 넣어 colume 제목 범위 지정 -->
+            <th scope="col">제목_1</th>
+            <th scope="col">제목_2</th>
+            <th scope="col">제목_3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td colspan="2">data_11</td>
+            <td>data_12</td>
+            <!-- <td>data_13</td> -->
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td rowspan="2">data_21</td>
+            <td>data_22</td>
+            <td>data_23</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <!-- <td>data_31</td> -->
+            <td>data_32</td>
+            <td>data_33</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">total</th>
+            <td>total_1</td>
+            <td>total_2</td>
+            <td>total_3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </figcaption>
+  </figure>
+
+</body>
+
+</html>

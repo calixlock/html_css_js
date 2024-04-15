@@ -33,6 +33,15 @@
 
 ---
 
+### 태그의 이름지정
+
+- id : identity
+
+  - 유일무이 , 중복 없음
+
+- class
+  - 하나이상의 요소 지정
+
 ## 참고사이트
 
 - https://www.w3schools.com/html/html_blocks.asp
