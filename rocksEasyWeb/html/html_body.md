@@ -21,7 +21,7 @@
 ### body의 sectioning
 
 - 과거
-  - w3c role attribute에 맞게
+  - w3c role attribute에 맞게 div에 role을 적용
 - 현재
   - html 내용 전달
     ```html
@@ -29,6 +29,12 @@
     ```
   - symantic 시멘틱 태그
     - html5에서는 role을 부여할 필요 없어짐
+
+---
+
+### list
+
+- 동급의 중요도를 가지는 요소들이 나열 될 때
 
 ---
 
