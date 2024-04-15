@@ -55,6 +55,26 @@
 <script src="./main.js"></script>
 ```
 
+### 4. 브라우저 지원파일
+
+- 지원가능
+  - html
+  - jpg
+  - gif
+  - pdf
+  - mp3
+  - mp4
+- 지원불가
+  - hwp
+  - docs
+  - excel
+  - etc
+  - zip
+- 금지된 파일
+  - js
+  - exe
+  - 악성파일 접근 가능
+
 ---
 
 ### 웹사이트 생명
