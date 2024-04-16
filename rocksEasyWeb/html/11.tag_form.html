@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+    button {
+      background: none;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--form/action에는 백엔드의 db에 연결 -->
+  <!-- novalidate : 유효성검사 강제 OFF -->
+  <!-- <form action="#" novalidate> -->
+  <!-- method: 데이터 보내는 방식 선택 -->
+  <!-- post는 암호화방식으로 넘어감 / 로그인관련-->
+  <!-- get은 주소표시줄에 노출되어 넘어감 / 검색관련  -->
+  <!-- 데이터 구분 fieldset -->
+  <fieldset>
+    <legend>필수입력</legend>
+    <form action="./12.join.html" method="post">
+      <!-- <form action="12.join.html" method="get"> -->
+      <p>
+        <label for="userName">이름 : </label>
+        <!-- minlength / 최소글자수: maxlength / size : 너비(css에서 적용 가능 / 비추)-->
+        <input type="text" id="username" name="username" required minlength="2" maxlength="5" placeholder="홍길동">
+      </p>
+      <p>
+        <label for="userEmail">이메일 : </label>
+        <input type="email" id="useremail" name="useremail" required placeholder="abc@abc.com">
+      </p>
+      <p><label for="userpw">비밀번호 : </label>
+        <input type="password" name="userpw" id="userpw" required placeholder="*******">
+      </p>
+      <input type="submit" value="전송">
+      <!-- btn : input type="submit"이 default -->
+      <!-- <button>전송</button>
+      <button type="reset">초기화</button> -->
+      <!-- <button><img src="img/04_send.png" alt="send"></button>
+      <input type="image" src="img/04_send.png" alt="send"> -->
+
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>선택사항/부가입력</legend>
+
+  </fieldset>
+</body>
+
+</html>
