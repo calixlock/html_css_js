@@ -37,7 +37,7 @@
       <p><label for="userpw">비밀번호 : </label>
         <input type="password" name="userpw" id="userpw" required placeholder="*******">
       </p>
-      <input type="submit" value="전송">
+
       <!-- btn : input type="submit"이 default -->
       <!-- <button>전송</button>
       <button type="reset">초기화</button> -->
@@ -48,9 +48,38 @@
   </fieldset>
   <fieldset>
     <legend>선택사항/부가입력</legend>
+    <div>
+      <label for="address">거주지를 선택해주세요</label>
+      <select name="address" id="address">
+        <option value="서울시">서울시</option>
+        <option value="경기도">경기도</option>
+        <option value="부산시">부산시</option>
+        <option value="제주도">제주도</option>
+      </select>
+    </div>
 
+    <div>
+      <!-- 단일선택 -->
+      <h2>성별을 입력해주세요</h2>
+      <!-- name속성이 같은경우 1개만 선택된다 -->
+      <label for="men">남성</label>
+      <input type="radio" name="gender" id="men" value="남성">
+      <label for="women">여성</label>
+      <input type="radio" name="gender" id="women" value="여성">
+
+    </div>
+    <div>
+      <h2>관심사항 체크</h2>
+      <label for="HTML">HTML</label>
+      <input type="checkbox" name="interest" id="HTML" value="HTML">
+      <label for="CSS">CSS</label>
+      <input type="checkbox" name="interest" id="CSS" value="CSS">
+      <label for="Javascript">Javascript</label>
+      <input type="checkbox" name="interest" id="Javascript" value="Javascript">
+    </div>
 
   </fieldset>
+  <input type="submit" value="전송">
 </body>
 
 </html>
