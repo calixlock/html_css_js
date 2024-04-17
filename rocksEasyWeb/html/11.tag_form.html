@@ -21,10 +21,10 @@
   <!-- post는 암호화방식으로 넘어감 / 로그인관련-->
   <!-- get은 주소표시줄에 노출되어 넘어감 / 검색관련  -->
   <!-- 데이터 구분 fieldset -->
-  <fieldset>
-    <legend>필수입력</legend>
-    <!-- form내부에 input/button이 만들어져야 내용이 전달됨 -->
-    <form action="./12.join.html" method="get">
+  <form action="./12.join.html" method="get">
+    <fieldset>
+      <legend>필수입력</legend>
+      <!-- form내부에 input/button이 만들어져야 내용이 전달됨 -->
       <!-- <form action="12.join.html" method="get"> -->
       <p>
         <!-- label/for와 input/id를 연결해야  : 이름 text 클릭시 커서 활성화됨 -->
@@ -47,93 +47,114 @@
       <!-- <button><img src="img/04_send.png" alt="send"></button>
       <input type="image" src="img/04_send.png" alt="send"> -->
 
-    </form>
-  </fieldset>
-  <fieldset>
-    <legend>선택사항/부가입력</legend>
-    <div>
-      <label for="address">거주지를 선택해주세요</label>
-      <select name="address" id="address">
-        <option value="서울시">서울시</option>
-        <option value="경기도">경기도</option>
-        <option value="부산시">부산시</option>
-        <option value="제주도">제주도</option>
-      </select>
-    </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택사항/부가입력</legend>
+      <div>
+        <label for="address">거주지를 선택해주세요</label>
+        <select name="address" id="address">
+          <option value="서울시">서울시</option>
+          <option value="경기도">경기도</option>
+          <option value="부산시">부산시</option>
+          <option value="제주도">제주도</option>
+        </select>
+      </div>
 
-    <div>
-      <!-- 단일선택 -->
-      <p>성별을 입력해주세요</p>
-      <!-- name속성이 같은경우 1개만 선택된다 -->
-      <label for="men">남성</label>
-      <input type="radio" name="gender" id="men" value="남성">
-      <label for="women">여성</label>
-      <input type="radio" name="gender" id="women" value="여성">
+      <div>
+        <!-- 단일선택 -->
+        <p>성별을 입력해주세요</p>
+        <!-- name속성이 같은경우 1개만 선택된다 -->
+        <label for="men">남성</label>
+        <input type="radio" name="gender" id="men" value="남성">
+        <label for="women">여성</label>
+        <input type="radio" name="gender" id="women" value="여성">
 
-    </div>
-    <div>
-      <p>관심사항 체크</>
-        <label for="HTML">HTML</label>
-        <input type="checkbox" name="interest" id="HTML" value="HTML">
-        <label for="CSS">CSS</label>
-        <input type="checkbox" name="interest" id="CSS" value="CSS">
-        <label for="Javascript">Javascript</label>
-        <input type="checkbox" name="interest" id="Javascript" value="Javascript">
-    </div>
-  </fieldset>
-  <fieldset>
-    <legend>HTML5 새로운 타입</legend>
-    <p>
-      <label for="web">website</label>
-      <input type="url" id="web" name="web">
-    </p>
-    <p>
-      <label for="userBrith">생년월일</label>
-      <input type="date" id=userBrith"" name="userBrith">
-    </p>
-    <p>
-      <label for="items">학습할 언어 선택</label>
-      <!-- input/list와 datalist/id 묶어 사용 -->
-      <!-- name지정해야 get/data 넘어감 -->
-      <input type="text" list="items" name="learn-language">
-      <datalist id="items">
-        <option value="html">html</option>
-        <option value="css">css</option>
-        <option value="javascript">javascript</option>
-      </datalist>
-    </p>
-    <p>
-      <label for="career">경력기간</label>
-      <input type="number" min="0" max="10" step="1" id="career" name="career">
-    </p>
-    <p>
-      <label for="learn-lang">학습할 언어 선택</label>
-      <!-- input/list와 datalist/id 묶어 사용 -->
-      <!-- name지정해야 get/data 넘어감 -->
-      <select name="learn-lang" id="learn-lang">
-        <optgroup label="frontend">
+      </div>
+      <div>
+        <p>관심사항 체크</>
+          <label for="HTML">HTML</label>
+          <input type="checkbox" name="interest" id="HTML" value="HTML">
+          <label for="CSS">CSS</label>
+          <input type="checkbox" name="interest" id="CSS" value="CSS">
+          <label for="Javascript">Javascript</label>
+          <input type="checkbox" name="interest" id="Javascript" value="Javascript">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>HTML5 새로운 타입</legend>
+      <p>
+        <label for="web">website</label>
+        <input type="url" id="web" name="web">
+      </p>
+      <p>
+        <label for="userBrith">생년월일</label>
+        <input type="date" id=userBrith"" name="userBrith">
+      </p>
+      <p>
+        <label for="items">학습할 언어 선택</label>
+        <!-- input/list와 datalist/id 묶어 사용 -->
+        <!-- name지정해야 get/data 넘어감 -->
+        <input type="text" list="items" name="learn-language">
+        <datalist id="items">
           <option value="html">html</option>
           <option value="css">css</option>
           <option value="javascript">javascript</option>
-        </optgroup>
-        <optgroup label="backend">
-          <option value="asp">asp</option>
-          <option value="jsp">jsp</option>
-          <option value="php">php</option>
-        </optgroup>
-      </select>
-    </p>
-    <div><label for="skill">숙련도</label>
-      <input type="range" id="skill" name="skill" min="0" , max="10" , value="5">
-    </div>
-    <div>
-      <label for="phone">phone</label>
-      <input type="text" id="phone" name="phone" pattern="[0-9]{1,11}" maxlength="11"
-        placeholder="010-0000-0000 / -없이 작성" title="숫자만 최대 11자리까지 입력해주세요">
-    </div>
-  </fieldset>
+        </datalist>
+      </p>
+      <p>
+        <label for="career">경력기간</label>
+        <input type="number" min="0" max="10" step="1" id="career" name="career">
+      </p>
+      <p>
+        <label for="learn-lang">학습할 언어 선택</label>
+        <!-- input/list와 datalist/id 묶어 사용 -->
+        <!-- name지정해야 get/data 넘어감 -->
+        <select name="learn-lang" id="learn-lang">
+          <optgroup label="frontend">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="javascript">javascript</option>
+          </optgroup>
+          <optgroup label="backend">
+            <option value="asp">asp</option>
+            <option value="jsp">jsp</option>
+            <option value="php">php</option>
+          </optgroup>
+        </select>
+      </p>
+      <div><label for="skill">숙련도</label>
+        <input type="range" id="skill" name="skill" min="0" , max="10" , value="5">
+      </div>
+      <div>
+        <label for="phone">phone</label>
+        <input type="text" id="phone" name="phone" pattern="[0-9]{1,11}" maxlength="11"
+          placeholder="010-0000-0000 / -없이 작성" title="숫자만 최대 11자리까지 입력해주세요">
+      </div>
+      <div>
+        <label for="userEmails">이메일 선택</label>
+        <input type="text" name="userEmails" id="userEmails">@
+        <select title="이메일 서비스 선택" multiple size="1">
+          <option value="직접입력">직접입력</option>
+          <option value="naver.com">naver.com</option>
+          <option value="kakao.com">kakao.com</option>
+          <option value="gmail.com">gmail.com</option>
+        </select>
+      </div>
+    </fieldset>
+  </form>
 
   <input type="submit" value="전송">
+  <hr>
+  <!-- 진행정도 status -->
+  <!-- 예전방식 -->
+  <!-- <meter value="3" max="10" min="0"></meter>
+  <progress value="3" max="10" min="0"></progress> -->
+  <!-- 요즘방식 : tap로 뼈대를 만들고 css/js로 구현 -->
+  <div class="progress">
+    <div class="bar">
+      60
+    </div>
+  </div>
 
 </body>
 
