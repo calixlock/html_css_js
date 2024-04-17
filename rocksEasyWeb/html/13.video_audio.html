@@ -10,16 +10,9 @@
 <body>
   <h1>multimedia</h1>
   <h2>video</h2>
+  <!-- caniuse : 사용가능파일 확인 -->
   <h3>비디오 구현방식 1</h3>
   <!-- width / height : css/js 적용 -->
-  <!-- option / muted controls autoplay -->
-  <!-- somenail / poster / autoplay옵션 억제  -->
-  <video src="./video/test_김광석 - 바람이 불어오는 곳 지브리 오케스트라 버전 - 1080_압축적용.mp4" muted controls poster="./img/00_test_img.jpg"
-    width="100%">
-  </video>
-
-  <!-- 외부 트래픽이용 cloudinary.com -->
-  <!-- caniuse : 사용가능파일 확인 -->
 
   <!-- <video autoplay muted controls> -->
   <!-- 1차 실행 -->
@@ -32,6 +25,29 @@
   <!-- <p>error - fallback contents 지원안됨</p> -->
   <!-- </video> -->
 
+  <!-- option / muted(재생시 음소거 디폴트) controls(재생바) autoplay(자동재생) loop(무한반복여부)-->
+  <!-- preload="none"/"auto" 미리로드옵션 -->
+  <!-- somenail / poster   -->
+  <!-- autoplay : 자동제생 억제  -->
+  <!-- 외부 트래픽이용 cloudinary.com -->
+  <video src="http://naver.me/5ewS0j4w" muted controls poster="./img/00_test_img.jpg" width="100%">
+  </video>
+
+  <!-- youtubeMode -->
+  <!-- iframe 가상> 다른웹사이트 표현 -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3Cs3SpUCi4E?si=3Ip6FtKU1zAT1fsh"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <!-- iframe 막음 -->
+  <iframe src="http://naver.com" width="560" height="315" frameborder="0"></iframe>
+  <!-- vimeo -->
+  <iframe src="https://player.vimeo.com/video/157743578?h=9d9c7e0f3f&loop=1" width="560" height="315" frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+  <hr>
+  <h2>audio</h2>
+  <audio src="./video/test_김광석 - 바람이 불어오는 곳 지브리 오케스트라 버전 - 1080_압축적용.mp4" controls type="audio/mp3"></audio>
 </body>
 
 </html>

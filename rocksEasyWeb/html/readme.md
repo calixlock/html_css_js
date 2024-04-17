@@ -10,6 +10,8 @@
 
 - 외부 트래픽 이용
   - http://cloudinary.com
+  - youtube
+  - vimeo
 - 브라우저 사용가능성 확인
   - caniuse
 
