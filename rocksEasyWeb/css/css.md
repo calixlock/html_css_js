@@ -5,6 +5,6 @@ p {
 }
 /*  */
 selector {
-  property(Attribute): property-value;
+  property(Attribute): property-value(value);
 }
 ```
