@@ -1,34 +1,46 @@
 /* 길이 단위 */
-/* 
-# 문서의 매체에 따라 달라짐 / 
-
-인쇄용 in/cm/mm/pt/pc 절대값과 관련
-
-모니터&스크린용 em/ex/px/% 상대값
-
+/*
+# 문서의 매체에 따라 달라짐
+- 인쇄용           in/cm/mm/pt/pc 절대값과 관련
+- 모니터 & 스크린용 em/ex/px/%     상대값과 관련
 html5추가 rem/ch
 
-viewport의 백분율 길이 vw/vh/vmin/vmax
+- em 단위가 쓰여진 곳의 폰트 사이즈 배수
+- rem 문서의 기본값(default_font_size = 16px)의 배수
+(But.root를 통해 변경 가능)
+- % 부모가 만들어준 공간안에서 너비 비율
 */
 
-/* em 단위가 쓰여진 곳의 폰트 사이즈 배수 */
-body {
-  font-size: 16px;
+/* viewport의 백분율 길이 vw/vh/vmin/vmax 
+- 1vw   뷰포트 폭(width)의 1%
+- 1vh   뷰포트 높이(height)의 1%
+- 1vmin 1vw 또는 1vh 중 작은값을 기준으로
+- 1vmax 1vw 또는 1vh 중 큰 값을 기준으로
+*/
+
+:root {
+  /* font-size: 10px; */
 }
 h1 {
   /* 1.5em = 16px * 1.5 */
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 p {
   /* width: 800px; */
   /* 20em = 16px * 1.5 * 20 = 480px */
-  width: 20em;
-  font-size: 1.5em;
+  width: 100%;
+  height: 50vh;
+  font-size: 1.5rem;
   background-color: green;
 }
 p span {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
+
+/* 
+참고사이트 
+pxtoem.com
+*/
