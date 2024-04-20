@@ -4,3 +4,30 @@
 /* 외부 파일 연결 */
 /* @import url(file_Path/sample.css); */
 /* @import "file_name.css"; */
+
+/* 색상표현 방식 */
+/* 1. rgb 16진수 표기 */
+div p {
+  /* background-color: #rrggbb; */
+  background-color: #ff0000;
+  /*  각 값들이 반복될 경우 한자리 생략가능 */
+  /* #000000 = #000 */
+  color: #000;
+}
+div span {
+  /* 2. 색상 키워드 지정가능 */
+  /* http://www.w3schools.com/tags/ref_colorpicker.asp */
+  background-color: silver;
+
+  /* 3. rgb 10진수(255,255,255) */
+  color: rgb(120, 120, 12);
+}
+div div {
+  /* 4. hsl(Hue,Saturate,Lightness) 색조/채도/명도 입력방식 */
+  /* h(0~360)도 / red=360 / green=120 / blue=240 */
+  /* s(0~100)%  / 0% = 완전회색, 100% = 가장높은채도 */
+  /* l(0~100)%  / 0% = 검은색    100% = 흰색 / default = 50% */
+  /* background-color: hsl(240, 100%.50%); */
+  background-color: hsl(0, 100%, 80%);
+  color: hsl(240, 100%, 50%);
+}
