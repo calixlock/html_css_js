@@ -1,0 +1,34 @@
+/* 길이 단위 */
+/* 
+# 문서의 매체에 따라 달라짐 / 
+
+인쇄용 in/cm/mm/pt/pc 절대값과 관련
+
+모니터&스크린용 em/ex/px/% 상대값
+
+html5추가 rem/ch
+
+viewport의 백분율 길이 vw/vh/vmin/vmax
+*/
+
+/* em 단위가 쓰여진 곳의 폰트 사이즈 배수 */
+body {
+  font-size: 16px;
+}
+h1 {
+  /* 1.5em = 16px * 1.5 */
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.2em;
+}
+p {
+  /* width: 800px; */
+  /* 20em = 16px * 1.5 * 20 = 480px */
+  width: 20em;
+  font-size: 1.5em;
+  background-color: green;
+}
+p span {
+  font-size: 0.8em;
+}
