@@ -31,3 +31,9 @@ div div {
   background-color: hsl(0, 100%, 80%);
   color: hsl(240, 100%, 50%);
 }
+
+div {
+  /* rgb + opacity */
+  background-color: rgb(0, 255, 0, 50%);
+  color: green;
+}
