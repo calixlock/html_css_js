@@ -41,7 +41,7 @@ p {
   color: green;
 } */
 
-/* 자식 선택자 */
+/* 자식들 선택자 */
 div > h2 {
   color: red;
 }
