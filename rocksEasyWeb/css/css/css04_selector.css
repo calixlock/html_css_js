@@ -36,12 +36,26 @@ p {
   color: brown;
 } */
 
-/* 자손 선택자 / 하위 선택자 */
+/* 자손들 선택자 / 하위 선택자 */
 /* div h2 {
   color: green;
 } */
 
 /* 자식들 선택자 */
+/* 
 div > h2 {
+  color: red;
+} 
+*/
+
+/* 인접형제 선택자 */
+/* div의 자손 h1 아래의 h2 선택 */
+/* 
+div h1 + h2 {  
+  color: red;
+} 
+*/
+/* div의 자손 nav 아래의 h2모두*/
+div nav ~ h2 {
   color: red;
 }
