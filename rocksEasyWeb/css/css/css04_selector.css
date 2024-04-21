@@ -33,3 +33,9 @@ div * {
 .weight {
   font-weight: bold;
 }
+
+/* id 선택자 / 유일하게 */
+
+#title {
+  color: brown;
+}
