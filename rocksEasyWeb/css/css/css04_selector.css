@@ -20,7 +20,7 @@ p {
 
 /* class 선택자 / 공통된 요소를 설정시 유용*/
 
-.color {
+/* .color {
   color: blueviolet;
 }
 .line {
@@ -28,15 +28,20 @@ p {
 }
 .weight {
   font-weight: bold;
-}
+} */
 
 /* id 선택자 / 유일하게 */
 
-#title {
+/* #title {
   color: brown;
-}
+} */
 
-/* 자손 선택자 */
-div h2 {
+/* 자손 선택자 / 하위 선택자 */
+/* div h2 {
   color: green;
+} */
+
+/* 자식 선택자 */
+div > h2 {
+  color: red;
 }
