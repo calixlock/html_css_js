@@ -18,10 +18,6 @@ p {
   color: blue;
 }
 
-div * {
-  color: green;
-}
-
 /* class 선택자 / 공통된 요소를 설정시 유용*/
 
 .color {
@@ -38,4 +34,9 @@ div * {
 
 #title {
   color: brown;
+}
+
+/* 자손 선택자 */
+div h2 {
+  color: green;
 }
