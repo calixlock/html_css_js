@@ -1,0 +1,35 @@
+/* 태그 선택자 */
+
+/* h1 {
+  background-color: silver;
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+p {
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+} */
+
+/* 전체 선택자 */
+
+* {
+  color: blue;
+}
+
+div * {
+  color: green;
+}
+
+/* class 선택자 */
+
+.color {
+  color: blueviolet;
+}
+.line {
+  text-decoration: underline;
+}
+.weight {
+  font-weight: bold;
+}
