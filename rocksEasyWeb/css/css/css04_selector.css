@@ -22,7 +22,7 @@ div * {
   color: green;
 }
 
-/* class 선택자 */
+/* class 선택자 / 공통된 요소를 설정시 유용*/
 
 .color {
   color: blueviolet;
