@@ -1,16 +1,51 @@
 /* 속성 선택자 / attribute selector */
 [target] {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 [target="_blank"] {
-  background-color: blue;
-  color: white;
+  /* background-color: blue;
+  color: white; */
 }
 [target="_self"] {
-  background-color: green;
-  color: white;
+  /* background-color: green;
+  color: white; */
 }
-/* class명이 link로 시작하는 것들 모두 */
+/* class명이 link로 시작하는 것들 모두 /class뒤 (^)주의 */
 [class^="link"] {
-  list-style: none;
+  /* list-style: none; */
+}
+
+/* 가상 선택자 / pseudo selector */
+/* :link (링크속성을 가진 태그 전부 / 방문전 )*/
+:link {
+  text-decoration: none;
+  color: green;
+  /* outline: none; */
+}
+/* hover 마우스가 위에 얹었을때 */
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+/* 클릭시 */
+a:active {
+  color: white;
+  background-color: red;
+}
+/* 방문된 */
+a:visited {
+  color: darkgoldenrod;
+}
+/* 포커스 되었을때 / active보다 강력  */
+a:focus {
+  background-color: blue;
+  color: #fff;
+}
+
+h1:hover {
+  text-decoration: underline;
+}
+input:focus {
+  background-color: red;
+  color: white;
 }
