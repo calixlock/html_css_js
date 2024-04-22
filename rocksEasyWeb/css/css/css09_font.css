@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* 
+font / text style
+종류
+1. san-serif : 고딕
+2. serif : 명조
+3. cursive : 필기체
+4. monospace : 동일공간 글꼴
+
+- 서체 지정시 쉼표(,)를 통해 여러개의 후보 서체 제시 가능
+- 서체 이름이 영어가 아닌경우 따옴표(") 적용 Ex "돋움"
+*/
+body {
+  /* font-family: "돋움"; */
+}
+
+/* 외부경로의 폰트체를 불러와 적용 */
+@font-face {
+  font-family: "폰트명";
+  src: url(font_path);
+}
