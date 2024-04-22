@@ -1,0 +1,22 @@
+/* 
+css 우선순위 
+
+1. 동급(같은)의 선택자 아래에 작성한 것이 우선
+
+2.!important > inline-style > id > class > tag
+*/
+p {
+  color: blue;
+}
+#text {
+  color: black;
+}
+.area p {
+  color: violet;
+}
+p {
+  color: red;
+}
+#text2 {
+  color: green !important;
+}
