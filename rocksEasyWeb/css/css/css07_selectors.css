@@ -1,3 +1,4 @@
+/* 의사요소 선택자 */
 /* h1태그 내의 내용(contents)의 앞에 삽입  */
 /* 가상이라 실체 없음 */
 h1:before {
@@ -12,7 +13,32 @@ h1:after {
   content: " after";
   color: blue;
 }
-
+/* 구조 선택자 */
+/* li의 첫번째에만 */
 li:first-child {
   text-decoration: underline;
+}
+/* li의 마지막에만 */
+li:last-child {
+  color: blueviolet;
+}
+/* 3번째에만 */
+li:nth-child(3) {
+  color: green;
+  text-decoration: underline;
+}
+/* 홀수 / 짝수 번째만 */
+li:nth-child(2n + 1) {
+  background-color: silver;
+}
+li:nth-child(n + 3) {
+  color: red;
+}
+
+/* 부정 선택자 */
+h2 {
+  background-color: brown;
+}
+:not(h2) {
+  background-color: aqua;
 }
