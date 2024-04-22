@@ -18,7 +18,7 @@ p {
   color: blue;
 }
 
-/* class 선택자 / 공통된 요소를 설정시 유용*/
+/* [.] class 선택자 / 공통된 요소를 설정시 유용*/
 
 /* .color {
   color: blueviolet;
@@ -30,39 +30,39 @@ p {
   font-weight: bold;
 } */
 
-/* id 선택자 / 유일하게 */
+/* [#] id 선택자 / 유일하게 */
 
 /* #title {
   color: brown;
 } */
 
-/* 자손들 선택자 / 하위 선택자 */
+/* [공백] 자손들 선택자 / 하위 선택자 */
 /* div h2 {
   color: green;
 } */
 
-/* 자식들 선택자 */
+/* [>] 자식들 선택자 */
 /* 
 div > h2 {
   color: red;
 } 
 */
 
-/* 인접형제 선택자 */
+/* [+] 인접형제 선택자 */
 /* div의 자손 h1 아래의 h2 선택 */
 /* 
 div h1 + h2 {  
   color: red;
 } 
 */
-/* div의 자손 nav 아래의 h2모두*/
+/* [~] div의 자손 nav 아래의 h2모두*/
 
 /* 
 div nav ~ h2 {
   color: red;
 } 
 */
-/* 그룹 선택자 (,)를 이용해 같은 설정*/
+/* [,] 그룹 선택자를 이용해 같은 설정*/
 #title,
 nav ~ h2 {
   text-decoration: underline;
