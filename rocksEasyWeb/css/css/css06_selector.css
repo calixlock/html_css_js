@@ -1,1 +1,16 @@
 /* 속성 선택자 / attribute selector */
+[target] {
+  text-decoration: none;
+}
+[target="_blank"] {
+  background-color: blue;
+  color: white;
+}
+[target="_self"] {
+  background-color: green;
+  color: white;
+}
+/* class명이 link로 시작하는 것들 모두 */
+[class^="link"] {
+  list-style: none;
+}
