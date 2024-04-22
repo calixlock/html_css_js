@@ -1,0 +1,31 @@
+body {
+  font-family: "돋움", dotum, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 2em;
+  /* font size
+    - px / % / em / rem / vw 
+    1. 절대크기 
+      xx-large(xx-small) / x-large(x-small) / large(small)
+    2. body기준으로 size 지정 
+      larger / smaller
+    3. em(emphasize) /(pxtoem.com) */
+  font-weight: 700;
+  /* font weight 종류
+    1. normal / lighter / bold
+    2. 100 ~ 900 */
+  text-decoration: line-through;
+  /* text-decoration 종류
+    - underline / overline / line-through */
+}
+del {
+  text-decoration: line-through;
+  font-style: italic;
+  /* italic = oblique / 기울임 */
+}
+em,
+address {
+  font-style: normal;
+}

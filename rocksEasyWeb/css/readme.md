@@ -6,7 +6,7 @@
 
 - 자료
   - https://github.com/alikerock/ezweb.git
-  - css검사
-    - csslint.net
+  - css검사 : http://csslint.net
   - font
-    - https://fonts.google.com
+    - px/em 계산기 : http://pxtoem.com
+    - 폰트 무료 : https://fonts.google.com
