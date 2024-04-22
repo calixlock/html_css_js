@@ -1,0 +1,18 @@
+/* h1태그 내의 내용(contents)의 앞에 삽입  */
+/* 가상이라 실체 없음 */
+h1:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  margin-right: 20px;
+}
+h1:after {
+  content: " after";
+  color: blue;
+}
+
+li:first-child {
+  text-decoration: underline;
+}
