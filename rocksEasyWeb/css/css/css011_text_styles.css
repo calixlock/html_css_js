@@ -1,0 +1,22 @@
+/* 글의 간격
+  letter-spacing / 글자 한자 한자 사이의 간격
+  word-spacing / 단어어 단어 사이의 간격
+  line-height / 라인의 높이
+  photoShop에서 tracking 1000 = 1em  
+
+
+*/
+body {
+  font-size: 12px;
+}
+h1 {
+  font-size: 1em;
+  letter-spacing: 1em;
+}
+
+.left {
+  word-spacing: 2em;
+}
+.center {
+  line-height: 40px;
+}
