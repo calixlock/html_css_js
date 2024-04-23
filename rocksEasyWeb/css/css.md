@@ -1,3 +1,5 @@
+### css 구조
+
 ```css
 /* css */
 selector {
@@ -9,3 +11,10 @@ p {
   padding: 5px;
 }
 ```
+
+---
+
+### vertical-align : 수직정렬
+
+![alt text](image.png)
+![alt text](image-1.png)
