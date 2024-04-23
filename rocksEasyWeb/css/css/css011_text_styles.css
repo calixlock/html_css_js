@@ -20,3 +20,11 @@ h1 {
 .center {
   line-height: 40px;
 }
+h2 {
+  width: 300px;
+  border: 2px solid red;
+  height: 60px;
+  /* 센터정렬 및 높이 중간정렬 */
+  text-align: center;
+  line-height: 60px;
+}
