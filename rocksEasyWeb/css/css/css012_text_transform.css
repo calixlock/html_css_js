@@ -1,18 +1,30 @@
 @charset "utf-8";
 /* text-transform */
 /* 전부 대문자로 */
-h1.uppercase {
+h2.uppercase {
   text-transform: uppercase;
 }
 /* 전부 소문자 */
-h1.lowercase {
+h2.lowercase {
   text-transform: lowercase;
 }
 /* 앞글자만 대문자 */
-h1.capitalize {
+h2.capitalize {
   text-transform: capitalize;
 }
 /* 사이즈를 다른 대문자로 */
-h1.smallcaps {
+h2.smallcaps {
   font-variant: small-caps;
+}
+
+/*  */
+body {
+  font-size: 20px;
+}
+h1 {
+  border: 1px solid;
+}
+/* 사진 밑 공백 제거 */
+img {
+  vertical-align: top;
 }
