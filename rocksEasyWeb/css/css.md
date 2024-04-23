@@ -16,5 +16,5 @@ p {
 
 ### vertical-align : 수직정렬
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](./img/image.png)
+![alt text](./img/image-1.png)
