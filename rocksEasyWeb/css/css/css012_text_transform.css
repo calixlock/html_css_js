@@ -18,13 +18,23 @@ h2.smallcaps {
 }
 
 /* vertical-align */
-body {
-  font-size: 20px;
-}
 h1 {
   border: 1px solid;
 }
 /* 사진 밑 공백 제거 */
 img {
   vertical-align: top;
+}
+/* 
+text-align:justify  => 균등 분할
+word-break:break-all  => 단어 알파벳 단위 조각
+*/
+p {
+  font-size: 12px;
+  width: 400px;
+  background-color: #ddd;
+}
+.area2 {
+  text-align: justify;
+  word-break: break-all;
 }
