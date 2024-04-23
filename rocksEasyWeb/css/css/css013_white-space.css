@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+  font-size: 12px;
+}
+
+.area {
+  width: 300px;
+
+  background-color: silver;
+  margin-bottom: 50px;
+}
+/* wrap : 쌓는다
+지정된 박스 크기보다 내용이 삐져나올 때 사용
+*/
+/* nowrap 쌓지않고 쭉 쓴다 */
+.nowrap {
+  white-space: nowrap;
+  height: 40px;
+}
+/* pre(preserve보존) : html 쓰인 그대로 보존 + 들여쓰기 */
+.pre {
+  white-space: pre;
+}
+/* 박스크기 나가는거 wrap하기 */
+.pre-wrap {
+  white-space: pre-wrap;
+}
+/* pre에서 들여쓰기만 x */
+.pre-line {
+  white-space: pre-line;
+}
