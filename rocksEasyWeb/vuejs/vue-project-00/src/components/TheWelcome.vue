@@ -1,9 +1,5 @@
 <script setup>
 import WelcomeItem from './WelcomeItem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import SupportIcon from './icons/IconSupport.vue'
-import ToolingIcon from './icons/IconTooling.vue'
 </script>
 
 <template>
@@ -18,7 +14,7 @@ import ToolingIcon from './icons/IconTooling.vue'
     provides you with all information you need to get started.
   </WelcomeItem>
 
-  <WelcomeItem>
+  <!-- <WelcomeItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -34,9 +30,7 @@ import ToolingIcon from './icons/IconTooling.vue'
     <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
       >Cypress Component Testing</a
     >.
-
     <br />
-
     More instructions are available in <code>README.md</code>.
   </WelcomeItem>
 
@@ -83,5 +77,5 @@ import ToolingIcon from './icons/IconTooling.vue'
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
+  </WelcomeItem> -->
 </template>

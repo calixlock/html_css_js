@@ -12,6 +12,11 @@ defineProps({
 
 const rawHtml = '<a href="#">Link</a>'
 const pid = 10
+let isBtnDisavled = false
+const multiProps = {
+  id: 'id01',
+  class: 'cl01'
+}
 </script>
 
 <template>
@@ -31,6 +36,15 @@ const pid = 10
     <div v-bind:id="pid">{{ pid }}</div>
     <!-- bind 생략 (:) -->
     <div :id="pid">{{ pid }}</div>
+    <!-- boolean .bind -->
+    <hr />
+    <button :disabled="isBtnDisavled">button</button>
+    <button :disabled="!isBtnDisavled">button</button>
+    <hr />
+    <!-- 멀티속성 바인딩 id/class-->
+    <div :="multiProps">멀티속성 바인딩</div>
+    <hr />
+    <!--  -->
   </div>
 </template>
 
