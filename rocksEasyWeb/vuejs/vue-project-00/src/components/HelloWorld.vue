@@ -14,8 +14,8 @@ const rawHtml = '<a href="#">Link</a>'
 const pid = 10
 let isBtnDisavled = false
 const multiProps = {
-  id: 'id01',
-  class: 'cl01'
+  id: 'id00',
+  class: 'cl00'
 }
 </script>
 
@@ -44,7 +44,11 @@ const multiProps = {
     <!-- 멀티속성 바인딩 id/class-->
     <div :="multiProps">멀티속성 바인딩</div>
     <hr />
-    <!--  -->
+    <!-- js expression -->
+    {{ number + 1 }}
+    {{ ok ? '예' : '아니오' }}
+    {{ message.split('').reverse().join('') }}
+    <div :id="`list-${id}`">list check</div>
   </div>
 </template>
 
