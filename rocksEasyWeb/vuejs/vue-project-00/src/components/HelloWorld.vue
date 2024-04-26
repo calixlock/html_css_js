@@ -3,18 +3,34 @@ defineProps({
   msg: {
     type: String,
     required: true
+  },
+  msg2: {
+    type: String,
+    required: true
   }
 })
+
+const rawHtml = '<a href="#">Link</a>'
+const pid = 10
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <!-- 데이터 변수 출력 -->
+    <h1 class="green">{{ msg }} {{ msg2 }}</h1>
     <h3>
-      You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
+    <hr />
+    <!-- 텍스트 보간 -->
+    <p>{{ rawHtml }}</p>
+    <p><span v-html="rawHtml"></span></p>
+    <hr />
+    <!-- 속성 바인딩 -->
+    <div v-bind:id="pid">{{ pid }}</div>
+    <!-- bind 생략 (:) -->
+    <div :id="pid">{{ pid }}</div>
   </div>
 </template>
 
