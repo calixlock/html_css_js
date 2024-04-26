@@ -13,7 +13,8 @@ defineProps({
 const rawHtml = '<a href="#">Link</a>'
 const pid = 10
 let isBtnDisavled = false
-const multiProps = {
+// eslint-disable-next-line no-unused-vars
+const idcl = {
   id: 'id00',
   class: 'cl00'
 }
@@ -42,7 +43,7 @@ const multiProps = {
     <button :disabled="!isBtnDisavled">button</button>
     <hr />
     <!-- 멀티속성 바인딩 id/class-->
-    <div :="multiProps">멀티속성 바인딩</div>
+    <div :="idcl">멀티속성 바인딩</div>
     <hr />
     <!-- js expression -->
     {{ number + 1 }}
