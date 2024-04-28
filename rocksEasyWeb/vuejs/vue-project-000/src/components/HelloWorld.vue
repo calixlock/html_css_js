@@ -9,28 +9,6 @@ defineProps({
     required: true,
   },
 });
-const rawHtml = '<a href="#">Link</a>';
-const pid = 10;
-let isBtnDisavled = false;
-const idcl = {
-  id: "id00",
-  class: "cl00",
-};
-const number = 20;
-const ok = false;
-const message = "12345";
-const id = 30;
-let sayHello = (msg) => {
-  // alert(msg);
-  console.log(msg);
-};
-const url = "http://www.google.com";
-const attributeName = "href";
-const items = [
-  { id: 0, value: "html" },
-  { id: 1, value: "css" },
-  { id: 2, value: "javascript" },
-];
 </script>
 
 <template>
