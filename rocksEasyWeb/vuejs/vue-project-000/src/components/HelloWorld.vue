@@ -26,6 +26,11 @@ let sayHello = (msg) => {
 };
 const url = "http://www.google.com";
 const attributeName = "href";
+const items = [
+  { id: 0, value: "html" },
+  { id: 1, value: "css" },
+  { id: 2, value: "javascript" },
+];
 </script>
 
 <template>
@@ -67,6 +72,11 @@ const attributeName = "href";
     <a :href="url">google</a>
     <a :href="[url]">구글</a>
     <a :[attributeName]="[url]">goo글</a>
+    <hr />
+    <!-- 반복문 -->
+    <div v-for="item in items" :key="item.id">
+      {{ item.value }}
+    </div>
   </div>
 </template>
 
