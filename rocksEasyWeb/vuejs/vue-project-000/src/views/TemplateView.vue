@@ -59,7 +59,7 @@ const items = [
     <hr />
     <!-- 반복문 -->
     <div v-for="item in items" :key="item.id">
-      {{ item.value }}
+      {{ item.id }} : {{ item.value }}
     </div>
   </div>
 </template>
