@@ -21,6 +21,9 @@ const items = [
   { id: 1, value: "css" },
   { id: 2, value: "javascript" },
 ];
+const onSubmit = () => {
+  alert("제출되었습니다");
+};
 </script>
 <template>
   <div class="layout">
@@ -61,6 +64,17 @@ const items = [
     <div v-for="item in items" :key="item.id">
       {{ item.id }} : {{ item.value }}
     </div>
+    <!-- v-on -->
+    <hr />
+    <div>
+      <button type="button" v-on:click="sayHello('안녕')">안녕</button>
+      <button type="button" @click="sayHello('안녕2')">안녕2</button>
+      <button type="button" @mouseover="sayHello('안녕3')">안녕3</button>
+    </div>
+    <!-- submit 버튼 작동시 기본기능 막고 onSubmit이 작동됨 -->
+    <form action="" @submit.prevent="onSubmit">
+      <button>제출</button>
+    </form>
   </div>
 </template>
 
