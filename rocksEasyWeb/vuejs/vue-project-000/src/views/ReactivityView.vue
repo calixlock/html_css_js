@@ -10,7 +10,8 @@ const increment = () => {
   <div class="layout">
     <h1>This is an Reactivity page</h1>
     <hr />
-    <button @click="increment">+</button>
+    <button @click="count++" disabled>+ ver.1</button>
+    <button @click="increment">+ ver.2</button>
     <div>{{ count }}</div>
   </div>
 </template>
