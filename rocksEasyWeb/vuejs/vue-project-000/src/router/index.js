@@ -21,7 +21,13 @@ const router = createRouter({
       path: "/template",
       name: "template",
       // 2중단어 Vue파일 제목 주의
-      component: () => import("../views/TemplateView.vue"),
+      component: () => import("../views/TempView.vue"),
+    },
+    {
+      path: "/reactivity",
+      name: "reactivity",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/ReactivityView.vue"),
     },
   ],
 });
