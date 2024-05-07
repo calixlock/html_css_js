@@ -29,13 +29,12 @@ export default {
     },
   },
 };
-console.log(this);
 </script>
 <template>
   <div class="layout">
     <h1>This is an computed properties page</h1>
     <hr />
-    {{ author }}
+    author : {{ author }}
     <hr />
     <!-- computed 방식 -->
     <span>책장 : {{ messageBooks }}</span>
