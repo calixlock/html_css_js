@@ -5,6 +5,7 @@ const awesome = true;
   <div class="layout">
     <h1>This is an conditionalRender page</h1>
     <hr />
+    <button @click="awesome = !awesome">전환</button>
     {{ awesome }}
   </div>
 </template>
