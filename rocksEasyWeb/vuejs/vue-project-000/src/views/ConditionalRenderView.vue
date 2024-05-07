@@ -6,6 +6,7 @@ export default {
       awesome: true,
       type: "d",
       page: true,
+      check: true,
     };
   },
 };
@@ -23,22 +24,39 @@ export default {
     <h2 v-else-if="type === 'c'">{{ type }} : type</h2>
     <h2 v-else>{{ type }} : type</h2>
     <hr />
-
+    <!-- 렌더 자체가 안됨 -->
     <button @click="page = !page" :class="{ active: page }">전환</button>
     <template v-if="page">
       <h1>제목 1</h1>
       <ul>
-        <li>단락 1</li>
-        <li>단락 2</li>
+        <li>단락 1-1</li>
+        <li>단락 1-2</li>
       </ul>
     </template>
     <template v-else>
       <h1>제목 2</h1>
       <ul>
-        <li>단락 1</li>
-        <li>단락 2</li>
+        <li>단락 2-1</li>
+        <li>단락 2-2</li>
       </ul>
     </template>
+    <hr />
+    <!-- 렌더링 되나 display속성으로 인해 안보이는 -->
+    <button @click="check = !check">전환</button>
+    <div v-show="check">
+      <h1>v-show 1</h1>
+      <ul>
+        <li>단락 1-1</li>
+        <li>단락 1-2</li>
+      </ul>
+    </div>
+    <div v-show="!check">
+      <h1>v-show 2</h1>
+      <ul>
+        <li>단락 2-1</li>
+        <li>단락 2-2</li>
+      </ul>
+    </div>
   </div>
 </template>
 
