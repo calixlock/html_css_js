@@ -5,6 +5,7 @@ export default {
     return {
       awesome: true,
       type: "d",
+      page: true,
     };
   },
 };
@@ -21,10 +22,35 @@ export default {
     <h2 v-else-if="type === 'b'">{{ type }} : type</h2>
     <h2 v-else-if="type === 'c'">{{ type }} : type</h2>
     <h2 v-else>{{ type }} : type</h2>
+    <hr />
+
+    <button @click="page = !page" :class="{ active: page }">전환</button>
+    <template v-if="page">
+      <h1>제목 1</h1>
+      <ul>
+        <li>단락 1</li>
+        <li>단락 2</li>
+      </ul>
+    </template>
+    <template v-else>
+      <h1>제목 2</h1>
+      <ul>
+        <li>단락 1</li>
+        <li>단락 2</li>
+      </ul>
+    </template>
   </div>
 </template>
 
 <style>
+button.active {
+  background-color: black;
+  color: white;
+}
+template.active {
+  background-color: black;
+  color: white;
+}
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
