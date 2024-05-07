@@ -1,21 +1,34 @@
-<script setup>
-import { reactive } from "vue";
-const author = reactive({
-  name: "John Doe",
-  books: [
-    "Vue 2 - Advanced Guide",
-    "Vue 3 - Basic Guide",
-    "Vue 4 - The Mystery",
-  ],
-});
+<script>
+export default {
+  data() {
+    return {
+      author: {
+        name: "John Doe",
+        books: [
+          "Vue 2 - Advanced Guide",
+          "Vue 3 - Basic Guide",
+          "Vue 4 - The Mystery",
+        ],
+      },
+      firstName: "MJ",
+      lastName: "Ahn",
+    };
+  },
+  computed: {
+    messageBooks() {
+      return this.author.books.length;
+    },
+  },
+};
 </script>
 <template>
   <div class="layout">
     <h1>This is an computed properties page</h1>
     <hr />
+    <!-- computed 방식 -->
     {{ author }}
     <hr />
-    {{ author.books.length }}
+    <span>책장 : {{ messageBooks }}</span>
   </div>
 </template>
 
