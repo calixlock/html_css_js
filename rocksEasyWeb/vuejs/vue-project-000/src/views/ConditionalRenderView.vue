@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+const awesome = true;
+</script>
 <template>
   <div class="layout">
     <h1>This is an conditionalRender page</h1>
+    <hr />
+    {{ awesome }}
   </div>
 </template>
 

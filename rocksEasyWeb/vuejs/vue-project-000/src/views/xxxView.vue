@@ -1,7 +1,8 @@
 <script setup></script>
 <template>
-  <div class="xxx">
+  <div class="layout">
     <h1>This is an xxx page</h1>
+    <hr />
   </div>
 </template>
 
