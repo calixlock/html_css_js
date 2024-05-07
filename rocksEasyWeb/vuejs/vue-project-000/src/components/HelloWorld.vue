@@ -12,6 +12,7 @@ defineProps({
 </script>
 
 <template>
+  {{ console.log("helloWorld template 실행") }}
   <div class="greetings">
     <!-- 데이터 변수 출력 -->
     <h1 class="green">{{ msg }} {{ msg2 }}</h1>
