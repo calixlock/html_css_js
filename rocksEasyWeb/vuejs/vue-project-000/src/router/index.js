@@ -35,6 +35,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/ComputedView.vue"),
     },
+    {
+      path: "/conditionalRender",
+      name: "conditionalRender",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/ConditionalRenderView.vue"),
+    },
   ],
 });
 
