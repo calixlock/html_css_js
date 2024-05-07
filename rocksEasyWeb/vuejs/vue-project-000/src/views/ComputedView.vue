@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="layout">
-    <h1>This is an ComputedView page</h1>
+    <h1>This is an computed properties page</h1>
     <hr />
   </div>
 </template>
