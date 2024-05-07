@@ -47,10 +47,7 @@ button.active {
   background-color: black;
   color: white;
 }
-template.active {
-  background-color: black;
-  color: white;
-}
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
