@@ -29,6 +29,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/ReactivityView.vue"),
     },
+    {
+      path: "/computed",
+      name: "computed",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/ComputedView.vue"),
+    },
   ],
 });
 
