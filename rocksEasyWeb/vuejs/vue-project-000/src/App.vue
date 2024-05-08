@@ -93,4 +93,9 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+.layout {
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid grey;
+}
 </style>
