@@ -21,7 +21,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/template">Template Grammer</RouterLink>
         <RouterLink to="/reactivity">Reactivity</RouterLink>
-        <RouterLink to="/Computed">Computed</RouterLink>
+        <RouterLink to="/computed">Computed</RouterLink>
         <RouterLink to="/conditionalRender">ConditionalRender</RouterLink>
         <RouterLink to="/listRender">ListRender</RouterLink>
       </nav>
