@@ -1,7 +1,13 @@
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
 <template>
   <div class="layout">
-    <h1>This is an xxx page</h1>
+    <h1>This is an List Rendering page</h1>
     <hr />
   </div>
 </template>
