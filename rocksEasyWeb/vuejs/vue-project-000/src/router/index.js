@@ -45,7 +45,7 @@ const router = createRouter({
       path: "/listRender",
       name: "listRender",
       // 2중단어 Vue파일 제목 주의
-      component: () => import("../views/ListRender.vue"),
+      component: () => import("../views/ListRenderingView.vue"),
     },
   ],
 });
