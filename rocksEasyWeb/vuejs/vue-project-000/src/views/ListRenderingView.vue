@@ -33,6 +33,7 @@ export default {
       </li>
     </ul>
     <hr />
+    <span v-for="n in 10" :key="n">{{ n }}</span>
   </div>
 </template>
 
