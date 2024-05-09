@@ -14,10 +14,10 @@ export default {
         publishedAt: "2016-04-10",
       },
       numbers: [1, 2, 3, 4, 5],
-      sets: [
-        [1, 2, 3, 4, 5],
-        [6, 7, 8, 9, 10],
-      ],
+      // sets: [
+      //   [1, 2, 3, 4, 5],
+      //   [6, 7, 8, 9, 10],
+      // ],
     };
   },
   // evenNumbers는 numbers의 data가 변경되었을 때 실행됨
@@ -26,11 +26,11 @@ export default {
       return this.numbers.filter((n) => n % 2 === 0);
     },
   },
-  methods: {
-    even(numbers) {
-      return numbers.filter((numbers) => numbers % 2 === 0);
-    },
-  },
+  // methods: {
+  //   even(numbers) {
+  //     return numbers.filter((numbers) => numbers % 2 === 0);
+  //   },
+  // },
 };
 </script>
 <template>
