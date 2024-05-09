@@ -8,6 +8,11 @@ export default {
         { id: 2, title: "CSS", desc: "CSS..." },
         { id: 3, title: "Javascript", desc: "Javascript..." },
       ],
+      myObject: {
+        title: "vue에서 목록을 작성하는 방법",
+        author: "홍길동",
+        publishedAt: "2016-04-10",
+      },
     };
   },
 };
@@ -21,6 +26,13 @@ export default {
         {{ parentLangs }} - {{ idx }} - {{ item.title }} - {{ item.desc }}
       </li>
     </ul>
+    <hr />
+    <ul>
+      <li v-for="(value, idx) in myObject" :key="value">
+        {{ idx }} : {{ value }}
+      </li>
+    </ul>
+    <hr />
   </div>
 </template>
 
