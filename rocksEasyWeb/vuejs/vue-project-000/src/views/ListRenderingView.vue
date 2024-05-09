@@ -13,7 +13,14 @@ export default {
         author: "홍길동",
         publishedAt: "2016-04-10",
       },
+      numbers: [1, 2, 3, 4, 5],
     };
+  },
+  // evenNumbers는 numbers의  data가 변경되었을 때 실행됨
+  computed: {
+    evenNumbers() {
+      return this.numbers.filter((n) => n % 2 === 0);
+    },
   },
 };
 </script>
@@ -39,6 +46,10 @@ export default {
       <template v-for="item in items" :key="item.id">
         <li>{{ item.desc }}</li>
       </template>
+    </ul>
+    <hr />
+    <ul>
+      <li v-for="n in evenNumbers" :key="n">{{ n }}</li>
     </ul>
   </div>
 </template>
