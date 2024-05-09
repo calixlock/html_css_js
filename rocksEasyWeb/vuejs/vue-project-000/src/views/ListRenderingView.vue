@@ -34,6 +34,12 @@ export default {
     </ul>
     <hr />
     <span v-for="n in 10" :key="n">{{ n }}</span>
+    <hr />
+    <ul>
+      <template v-for="item in items" :key="item.id">
+        <li>{{ item.desc }}</li>
+      </template>
+    </ul>
   </div>
 </template>
 
