@@ -47,6 +47,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/ListRenderingView.vue"),
     },
+    {
+      path: "/event",
+      name: "event",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/EventView.vue"),
+    },
   ],
 });
 
