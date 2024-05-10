@@ -20,14 +20,21 @@ export default {
       ],
     };
   },
-  // evenNumbers는 numbers의 data가 변경되었을 때 실행됨
+  // 스크립트 실행시 computed / method 모두 셋팅 실행됨
+  // computed / 변경이 없을시 다시 실행될 필요 없는 것 /evenNumbers는
   computed: {
     evenNumbers() {
+      console.log("evenNumbers start");
+      console.log(this.numbers);
+      // return에 해당하는 numbers의 data가 변경되었을 때 실행됨
       return this.numbers.filter((n) => n % 2 === 0);
     },
   },
+  // methods / data함수내 어떤 값이든 변경되면 실행됨
   methods: {
     even(numbers) {
+      console.log("even start");
+      console.log(this.sets);
       return numbers.filter((numbers) => numbers % 2 === 0);
     },
   },
@@ -65,12 +72,15 @@ export default {
     <ul>
       <li v-for="n in evenNumbers" :key="n">{{ n }}</li>
     </ul>
+    <button @click="numbers.push(2)">+</button>
     <hr />
     <h2>v-for method / double for loop</h2>
     <ul v-for="numbers in sets" :key="numbers">
       <li v-for="n in even(numbers)" :key="n">{{ n }}</li>
       <hr />
     </ul>
+    <button @click="sets[0].push(2)">+</button>
+    <button @click="sets[1].push(2)">+</button>
   </div>
 </template>
 
