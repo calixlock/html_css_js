@@ -44,6 +44,12 @@ export default {
     spanClick() {
       alert("spanClick");
     },
+    submit() {
+      alert("enter 키가 입력되었습니다.");
+    },
+    onPageDown() {
+      alert("pageDown키가 입력되었습니다");
+    },
   },
 };
 </script>
@@ -96,6 +102,11 @@ export default {
     <div @click.self="boxClick" class="box">
       <span @click.self="spanClick" class="box">spanClick.self</span>
     </div>
+    <hr />
+    <h2>Key Modifier</h2>
+    <!-- (특정키 지정 가능)'keyup'의 'enter' 눌릴 시 submit 호출 -->
+    <input type="" @keyup.enter="submit" />
+    <input type="" @keyup.page-down="onPageDown" />
   </div>
 </template>
 
