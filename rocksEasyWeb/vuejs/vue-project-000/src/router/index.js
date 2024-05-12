@@ -53,6 +53,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/EventView.vue"),
     },
+    {
+      path: "/form",
+      name: "form",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/FormInputView.vue"),
+    },
   ],
 });
 

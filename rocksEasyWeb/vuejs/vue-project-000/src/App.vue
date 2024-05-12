@@ -22,9 +22,10 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/template">Template Grammer</RouterLink>
         <RouterLink to="/reactivity">Reactivity</RouterLink>
         <RouterLink to="/computed">Computed</RouterLink>
-        <RouterLink to="/conditional Render">ConditionalRender</RouterLink>
-        <RouterLink to="/list Render">ListRender</RouterLink>
+        <RouterLink to="/conditional Render">Conditional Render</RouterLink>
+        <RouterLink to="/list Render">List Render</RouterLink>
         <RouterLink to="/event">Event</RouterLink>
+        <RouterLink to="/form">Form Input Bind</RouterLink>
       </nav>
     </div>
   </header>
