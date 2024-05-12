@@ -76,9 +76,9 @@ export default {
     <h2>Event Modifier</h2>
     <!-- the click event's propagation will be stopped -->
     <!-- 클릭 이벤트 부모에게 전달되는거 중지 / 본인 이벤트 실행 / target="_blank" / 새창에서 열리도록-->
-    <a @click.stop="doThis" href="http://www.naver.com" target="_blank"
-      >doThis</a
-    >
+    <a @click.stop="doThis" href="http://www.naver.com" target="_blank">
+      doThis
+    </a>
 
     <!-- the submit event will no longer reload the page / action 동작 중지-->
     <form @submit.prevent="onSubmit" action="http://www.naver.com">
@@ -104,7 +104,7 @@ export default {
     </div>
     <hr />
     <h2>Key Modifier</h2>
-    <!-- (특정키 지정 가능)'keyup'의 'enter' 눌릴 시 submit 호출 -->
+    <!-- 특정키 지정 가능 /'keyup'의 'enter' 눌릴 시 submit 호출 -->
     <input type="" @keyup.enter="submit" />
     <input type="" @keyup.page-down="onPageDown" />
   </div>
