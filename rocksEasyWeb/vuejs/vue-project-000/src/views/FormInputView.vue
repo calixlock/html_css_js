@@ -3,6 +3,7 @@ export default {
   data() {
     return {
       msg: "",
+      multiple: "",
     };
   },
 };
@@ -18,8 +19,16 @@ export default {
       :value="msg"
       @input="(event) => (msg = event.target.value)"
     /> -->
+    <!-- 한글/중국어/일본어 문자의 합쳐짐이 있으면 즉각 반영어려움 / 영어 숫자 가능 -->
     <input v-model="msg" />
     <p>msg : {{ msg }}</p>
+    <hr />
+    <h2>Multiple Texts</h2>
+    <p style="white-space: pre-line">{{ multiple }}</p>
+    <textarea
+      v-model="multiple"
+      placeholder="여러 줄을 추가해보세요"
+    ></textarea>
   </div>
 </template>
 
