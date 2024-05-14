@@ -2,11 +2,12 @@
 export default {
   data() {
     return {
-      msg: "",
-      multiple: "",
+      msg: "none",
+      multiple: "none",
       checked: false,
       checkedList: [],
       picked: "none",
+      selected: "none",
     };
   },
 };
@@ -55,6 +56,15 @@ export default {
     <label for="two">둘</label>
     <input type="radio" name="" id="three" value="셋" v-model="picked" />
     <label for="three">셋</label>
+    <hr />
+    <h2>select : v-model</h2>
+    <select name="" id="" v-model="selected">
+      <option disabled value="">다음 중 하나를 고르시오</option>
+      <option value="a">가</option>
+      <option value="b">나</option>
+      <option value="c">다</option>
+    </select>
+    <div>selected : {{ selected }}</div>
   </div>
 </template>
 
