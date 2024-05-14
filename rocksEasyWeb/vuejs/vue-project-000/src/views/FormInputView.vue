@@ -4,6 +4,8 @@ export default {
     return {
       msg: "",
       multiple: "",
+      checked: false,
+      checkedList: [],
     };
   },
 };
@@ -23,12 +25,26 @@ export default {
     <input v-model="msg" />
     <p>msg : {{ msg }}</p>
     <hr />
-    <h2>Multiple Texts</h2>
+    <h2>Multiple Texts v-model</h2>
     <p style="white-space: pre-line">{{ multiple }}</p>
     <textarea
       v-model="multiple"
       placeholder="여러 줄을 추가해보세요"
     ></textarea>
+    <hr />
+    <h2>check box vind</h2>
+    <input type="checkbox" name="" id="checkboxx" v-model="checked" />
+    <!-- checked : true / !checked: false -->
+    <label for="checkbox">{{ checked }}</label>
+    <hr />
+    <h2>check List v-model</h2>
+    <input type="checkbox" name="" id="jack" value="잭" v-model="checkedList" />
+    <label for="jack">잭</label>
+    <input type="checkbox" name="" id="kim" value="김" v-model="checkedList" />
+    <label for="kim">김</label>
+    <input type="checkbox" name="" id="ahn" value="안" v-model="checkedList" />
+    <label for="ahn">안</label>
+    <div>checked List : {{ checkedList }}</div>
   </div>
 </template>
 
