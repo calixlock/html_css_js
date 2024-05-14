@@ -1,7 +1,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      msg: "",
+    };
   },
 };
 </script>
@@ -9,6 +11,15 @@ export default {
   <div class="layout">
     <h1>This is an Form Input Bindings page</h1>
     <hr />
+    <h2>Text</h2>
+    <!-- input bind -->
+    <!-- <input
+      type="text"
+      :value="msg"
+      @input="(event) => (msg = event.target.value)"
+    /> -->
+    <input v-model="msg" />
+    <p>msg : {{ msg }}</p>
   </div>
 </template>
 
