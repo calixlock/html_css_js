@@ -6,6 +6,7 @@ export default {
       multiple: "",
       checked: false,
       checkedList: [],
+      picked: "none",
     };
   },
 };
@@ -45,6 +46,15 @@ export default {
     <input type="checkbox" name="" id="ahn" value="안" v-model="checkedList" />
     <label for="ahn">안</label>
     <div>checked List : {{ checkedList }}</div>
+    <hr />
+    <h2>radio btn : picked v-model</h2>
+    <div>selected : {{ picked }}</div>
+    <input type="radio" name="" id="one" value="하나" v-model="picked" />
+    <label for="one">하나</label>
+    <input type="radio" name="" id="two" value="둘" v-model="picked" />
+    <label for="two">둘</label>
+    <input type="radio" name="" id="three" value="셋" v-model="picked" />
+    <label for="three">셋</label>
   </div>
 </template>
 
