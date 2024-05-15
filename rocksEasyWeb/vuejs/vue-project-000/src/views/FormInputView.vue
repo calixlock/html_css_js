@@ -7,7 +7,12 @@ export default {
       checked: false,
       checkedList: [],
       picked: "none",
-      selected: "none",
+      selected: undefined,
+      options: [
+        { text: "하나", value: "1" },
+        { text: "둘", value: "2" },
+        { text: "셋", value: "3" },
+      ],
     };
   },
 };
@@ -65,6 +70,14 @@ export default {
       <option value="c">다</option>
     </select>
     <div>selected : {{ selected }}</div>
+    <hr />
+    <h2>v-for : dynamic rendering</h2>
+    <select name="" id="" v-model="selected">
+      <option v-for="option in options" :value="option.value" :key="option">
+        {{ option.text }}
+      </option>
+    </select>
+    <div>selected: {{ selected }}</div>
   </div>
 </template>
 
