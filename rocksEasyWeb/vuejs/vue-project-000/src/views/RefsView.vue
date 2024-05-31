@@ -2,7 +2,8 @@
 export default {
   mounted() {
     // mounted가 되면 ref가 input인 곳에 focus를 해라
-    this.$refs.input.focus();
+    // this.$refs.input.focus();
+    document.querySelector("#username").focus();
   },
 };
 </script>
@@ -10,7 +11,8 @@ export default {
   <div class="layout">
     <h1>This is refs page</h1>
     <hr />
-    <input ref="input" />
+    <!-- <input ref="input" /> -->
+    <input type="text" id="username" />
   </div>
 </template>
 
