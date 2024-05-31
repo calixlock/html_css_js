@@ -65,6 +65,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/LifecycleView.vue"),
     },
+    {
+      path: "/watchers",
+      name: "watchers",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/WatchersView.vue"),
+    },
   ],
 });
 
