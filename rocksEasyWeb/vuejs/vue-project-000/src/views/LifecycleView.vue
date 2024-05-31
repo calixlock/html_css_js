@@ -1,4 +1,6 @@
-<script setup></script>
+<script>
+export default {};
+</script>
 <template>
   <div class="layout">
     <h1>This is an lifecycle hooks page</h1>
