@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="layout">
-    <h1>This is an lifecycle page</h1>
+    <h1>This is an lifecycle hooks page</h1>
     <hr />
   </div>
 </template>
