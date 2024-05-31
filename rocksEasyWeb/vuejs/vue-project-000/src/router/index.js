@@ -59,6 +59,12 @@ const router = createRouter({
       // 2중단어 Vue파일 제목 주의
       component: () => import("../views/FormInputView.vue"),
     },
+    {
+      path: "/lifecycle",
+      name: "lifecycle",
+      // 2중단어 Vue파일 제목 주의
+      component: () => import("../views/LifecycleView.vue"),
+    },
   ],
 });
 

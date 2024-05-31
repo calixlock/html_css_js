@@ -26,6 +26,7 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/list Render">List Render</RouterLink>
         <RouterLink to="/event">Event</RouterLink>
         <RouterLink to="/form">Form Input Bind</RouterLink>
+        <RouterLink to="/lifecycle">Lifecycle</RouterLink>
       </nav>
     </div>
   </header>
