@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="layout">
-    <h1>This is an Refs page</h1>
+    <h1>This is refs page</h1>
     <hr />
   </div>
 </template>
