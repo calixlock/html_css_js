@@ -5,9 +5,10 @@
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "background": {
-    "service_worker": "script.js"
+    "service_worker": "background.js"
   },
   "action": {
+    "default_title": "default Title",
     "default_popup": "./popup/popup.html",
     "default_icon": "./images/icon.png"
   }
