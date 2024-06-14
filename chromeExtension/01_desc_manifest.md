@@ -93,3 +93,105 @@
   - default_title: 사용자가 확장 아이콘에 마우스를 올렸을 때 표시되는 기본 제목입니다.
   - default_popup: 아이콘을 클릭했을 때 열리는 팝업 HTML 파일입니다.
   - default_icon: 확장 아이콘의 경로입니다.
+
+---
+
+#### + 추가
+
+#### - icons
+
+- 확장 프로그램의 아이콘을 다양한 크기로 설정합니다.
+
+```json
+  "icons": {
+    // 16 : 확장 프로그램 페이지 및 컨텍스트 메뉴의 파비콘
+    "16": "images/icon-16.png",
+    // 32 :	Windows 컴퓨터에는 이 크기가 필요한 경우가 많습니다.
+    "32": "images/icon-32.png",
+    // 48 : 광고 확장 페이지에 표시됩니다.
+    "48": "images/icon-48.png",
+    // 128 : 설치 시 및 Chrome 웹 스토어에 표시됩니다.
+    "128": "images/icon-128.png"
+  }
+```
+
+#### - content_scripts
+
+- 웹 페이지에 주입할 script , CSS를 정의합니다.
+
+```json
+"content_scripts": [
+  {
+    // matches : 스크립트가 주입될 URL 패턴입니다.
+    "matches": ["<all_urls>"],
+    // js : 주입할 자바스크립트 파일입니다.
+    "js": ["./content_script.js"],
+    // css : 주입할 CSS 파일입니다.
+    "css": ["./styles.css"]
+  }
+]
+```
+
+#### - web_accessible_resources
+
+- 웹 페이지에서 접근 가능한 리소스를 정의합니다.
+
+```json
+"web_accessible_resources": [
+  {
+    "resources": ["./images/*", "./popup/*"],
+    "matches": ["<all_urls>"]
+  }
+]
+```
+
+#### - options_page
+
+- 확장 프로그램의 옵션 페이지를 정의합니다.
+- 사용자가 확장의 설정을 변경할 수 있습니다
+
+```json
+"options_page": "./options/options.html",
+```
+
+#### - commands
+
+- 확장 프로그램의 단축키 명령을 정의합니다.
+
+```json
+"commands": {
+  //toggle-feature: 명령의 이름입니다.
+  "toggle-feature": {
+    //suggested_key: 단축키를 설정합니다.
+    "suggested_key": {
+      "default": "Ctrl+Shift+F",
+      "mac": "Command+Shift+F"
+    },
+    //description: 명령의 설명입니다.
+    "description": "Toggle the feature"
+  }
+}
+```
+
+#### - omnibox
+
+- 주소창에 키워드를 입력하여 확장 프로그램을 트리거할 수 있게 합니다.
+
+```json
+"omnibox": {
+"keyword": "search"
+},
+```
+
+#### - content_security_policy
+
+- 확장 프로그램의 보안 정책을 정의합니다.
+
+```json
+"content_security_policy": {
+"extension_pages": "script-src 'self'; object-src 'self'"
+}
+
+```
+
+---
