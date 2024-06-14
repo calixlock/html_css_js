@@ -1,6 +1,10 @@
 /* popup의 style */
 body {
   font-family: Arial, sans-serif;
+  width: 300px;
+}
+#returnText {
+  font-size: 1.2rem;
 }
 h2 {
   color: green;
