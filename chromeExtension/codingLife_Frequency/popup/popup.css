@@ -2,10 +2,15 @@
 body {
   font-family: Arial, sans-serif;
   width: 300px;
+  padding: 0.5rem;
+}
+
+h2 {
+  color: green;
 }
 #returnText {
   font-size: 1.2rem;
 }
-h2 {
-  color: green;
+#userTextArea {
+  width: 100%;
 }
