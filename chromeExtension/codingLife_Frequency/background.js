@@ -1,8 +1,15 @@
-// popup창에서 실행됨 / action보다 먼저 실행됨
-// console.log("background_Js ----START----");
+let storedData = {};
 
-chrome.runtime.onInstalled.addListener(function () {
-  console.log("Extension installed");
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "DATA_EXTRACTED" && message.data) {
+    storedData = message.data;
+  }
+});
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "GET_STORED_DATA") {
+    sendResponse(storedData);
+  }
+  return true; // sendResponse is asynchronous
 });
 
-// console.log("background_Js ----END----");
+console.log(storedData);
