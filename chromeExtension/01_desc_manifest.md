@@ -69,7 +69,9 @@
 
 ```json
 "background": {
-  "service_worker": "./background.js"
+  // service_worker는 1개의 script만 가져올 수 있다.
+  "service_worker": "./background.js",
+  "type": "module" //optional
 }
 ```
 

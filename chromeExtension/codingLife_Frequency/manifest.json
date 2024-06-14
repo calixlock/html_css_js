@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Word Frequency",
-  "description": "Knowing words is a strength",
+  "description": "A simple chrome extension",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "background": {
@@ -10,6 +10,12 @@
   "action": {
     "default_title": "default Title",
     "default_popup": "./popup/popup.html",
-    "default_icon": "./images/icon.png"
-  }
+    "default_icon": "./icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
 }

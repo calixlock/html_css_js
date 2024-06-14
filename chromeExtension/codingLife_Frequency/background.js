@@ -1,7 +1,8 @@
 // popup창에서 실행됨 / action보다 먼저 실행됨
-console.log("background_Js ----START----");
+// console.log("background_Js ----START----");
 
-let color = "#3aa757";
-console.log(color);
+chrome.runtime.onInstalled.addListener(function () {
+  console.log("Extension installed");
+});
 
-console.log("background_Js ----END----");
+// console.log("background_Js ----END----");
